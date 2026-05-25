@@ -2,14 +2,7 @@ const EMAILJS_PUBLIC_KEY = 'ZlIQISnC-Ydulg61b';
 const EMAILJS_SERVICE_ID = 'service_85wytkb';
 const EMAILJS_TEMPLATE_ID = 'template_vuxvtum';
 
-declare const emailjs: {
-  init(key: string): void;
-  send(
-    serviceId: string,
-    templateId: string,
-    params: Record<string, string>
-  ): Promise<unknown>;
-};
+import emailjs from '@emailjs/browser';
 
 emailjs.init(EMAILJS_PUBLIC_KEY);
 
