@@ -178,7 +178,6 @@
     font-weight: 700;
     display: block;
     padding: 8px 0;
-    color: var(--color-ink);
     letter-spacing: -0.3px;
   }
   #navMenu a:hover { color: var(--color-blue); }
