@@ -82,7 +82,7 @@ const dict: Record<string, Record<string, string>> = {
     "nav.about": "Nosotros",
     "nav.contact": "Contáctanos",
     "hero.eyebrow": "Alexandria, Virginia",
-    "hero.title": "Tu Centro de <br>Soluciones Multi<em class=\"not-italic text-blue\">servicio</em>",
+    "hero.title": "Tu Centro de <br><em class=\"not-italic text-blue\">Soluciones</em> Multiservicio",
     "hero.desc": "Logística, servicios digitales y una amplia gama de electrodomésticos — todo lo que necesitas, en un solo lugar conveniente del norte de Virginia.",
     "hero.cta1": "Nuestros Servicios",
     "hero.cta2": "Contáctanos",
