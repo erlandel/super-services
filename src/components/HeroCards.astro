@@ -1,0 +1,76 @@
+---
+import { plusIcon, monitorIcon, deviceIcon, chatIcon } from './icons/icons';
+---
+
+<div class="relative z-[1] h-[480px] flex items-center justify-center opacity-0 animate-up max-md:h-auto max-md:min-h-[400px] max-md:mt-5 max-sm:hidden" aria-hidden="true" style="animation-delay: 0.5s">
+  <div
+    class="absolute w-[320px] h-[320px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-[1]"
+    style="background: radial-gradient(circle, var(--color-blue-light), transparent 50%)"
+  ></div>
+
+  <div
+    class="hv-card absolute top-[30px] left-[10%] bg-surface border border-line rounded-[18px] px-5 py-[18px] shadow-card flex items-center gap-3.5 min-w-[240px] hover:-translate-y-1 hover:scale-102 transition-transform duration-300"
+    style="animation: float 6s ease-in-out infinite"
+  >
+    <div class="w-11 h-11 rounded-xl bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <span class="w-[22px] h-[22px]"><Fragment set:html={plusIcon} /></span>
+    </div>
+    <div>
+      <strong class="block font-display text-base font-bold text-ink" data-i18n="hv.1.t">Logistics</strong>
+      <span class="text-[0.78rem] text-muted" data-i18n="hv.1.d">Parcel handling</span>
+    </div>
+  </div>
+
+  <div
+    class="hv-card absolute top-[140px] right-[5%] bg-surface border border-line rounded-[18px] px-5 py-[18px] shadow-card flex items-center gap-3.5 min-w-[240px] hover:-translate-y-1 hover:scale-102 transition-transform duration-300"
+    style="animation: float 6s ease-in-out 1.5s infinite"
+  >
+    <div class="w-11 h-11 rounded-xl bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <span class="w-[22px] h-[22px]"><Fragment set:html={monitorIcon} /></span>
+    </div>
+    <div>
+      <strong class="block font-display text-base font-bold text-ink" data-i18n="hv.2.t">Digital</strong>
+      <span class="text-[0.78rem] text-muted" data-i18n="hv.2.d">Online services</span>
+    </div>
+  </div>
+
+  <div
+    class="hv-card absolute top-[260px] left-[5%] bg-surface border border-line rounded-[18px] px-5 py-[18px] shadow-card flex items-center gap-3.5 min-w-[240px] hover:-translate-y-1 hover:scale-102 transition-transform duration-300"
+    style="animation: float 6s ease-in-out 3s infinite"
+  >
+    <div class="w-11 h-11 rounded-xl bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <span class="w-[22px] h-[22px]"><Fragment set:html={deviceIcon} /></span>
+    </div>
+    <div>
+      <strong class="block font-display text-base font-bold text-ink" data-i18n="hv.3.t">Top-Ups</strong>
+      <span class="text-[0.78rem] text-muted" data-i18n="hv.3.d">All carriers</span>
+    </div>
+  </div>
+
+  <div
+    class="hv-card absolute top-[360px] right-[10%] bg-surface border border-line rounded-[18px] px-5 py-[18px] shadow-card flex items-center gap-3.5 min-w-[240px] hover:-translate-y-1 hover:scale-102 transition-transform duration-300"
+    style="animation: float 6s ease-in-out 4.5s infinite"
+  >
+    <div class="w-11 h-11 rounded-xl bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <span class="w-[22px] h-[22px]"><Fragment set:html={chatIcon} /></span>
+    </div>
+    <div>
+      <strong class="block font-display text-base font-bold text-ink" data-i18n="hv.4.t">Support</strong>
+      <span class="text-[0.78rem] text-muted" data-i18n="hv.4.d">Real people</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hv-card {
+    min-width: 240px;
+  }
+  @media (max-width: 900px) {
+    .hv-card {
+      min-width: 200px;
+      padding: 14px 16px;
+    }
+    .hv-card strong { font-size: 0.9rem; }
+    .hv-card span { font-size: 0.72rem; }
+  }
+</style>

@@ -1,0 +1,56 @@
+---
+import ServiceCard from './ServiceCard.astro';
+---
+
+<section id="services" class="px-[6%] py-[100px] bg-bg transition-[background] duration-350">
+  <div class="mb-[52px] rv">
+    <div class="text-[0.75rem] font-semibold tracking-[2.5px] uppercase text-blue mb-3" data-i18n="svc.label">
+      What We Offer
+    </div>
+    <h2 class="font-display text-[clamp(1.9rem,3.5vw,2.8rem)] font-bold text-ink tracking-[-0.5px]" data-i18n="svc.title">
+      Built for Convenience
+    </h2>
+    <p class="text-muted text-base leading-[1.7] mt-2.5 max-w-[480px]" data-i18n="svc.sub">
+      Four core services designed to make your day easier — all under one roof.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-[18px]">
+    <div class="rv flex">
+      <ServiceCard
+        num="01"
+        title="Logistics &amp; Parcel Handling"
+        desc="Reliable end-to-end parcel management. We handle pick-up, processing, and delivery coordination so your shipments always arrive on time."
+        i18nTitle="svc.1.t"
+        i18nDesc="svc.1.d"
+      />
+    </div>
+    <div class="rv flex">
+      <ServiceCard
+        num="02"
+        title="Digital Services"
+        desc="Modern digital solutions for your everyday needs. From online transactions to document processing, we keep you connected and productive."
+        i18nTitle="svc.2.t"
+        i18nDesc="svc.2.d"
+      />
+    </div>
+    <div class="rv flex">
+      <ServiceCard
+        num="03"
+        title="Mobile Top-Ups"
+        desc="Quick and easy recharges for all major carriers. Stay connected without hassle — processed fast and securely at our location."
+        i18nTitle="svc.3.t"
+        i18nDesc="svc.3.d"
+      />
+    </div>
+    <div class="rv flex">
+      <ServiceCard
+        num="04"
+        title="Customer Support &amp; Processing"
+        desc="Personalized guidance and administrative help. Our team walks you through every step, making complex tasks simple."
+        i18nTitle="svc.4.t"
+        i18nDesc="svc.4.d"
+      />
+    </div>
+  </div>
+</section>

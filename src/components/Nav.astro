@@ -1,0 +1,65 @@
+---
+import { moonIcon } from './icons/icons';
+---
+
+<nav
+  class="sticky top-0 left-0 right-0 z-50 flex items-center justify-between px-[6%] py-[18px] bg-white/92 dark:bg-[rgba(11,19,32,0.85)] backdrop-blur-[14px] border-b border-line transition-[background,border-color] duration-350"
+>
+  <div class="font-display text-[1.3rem] font-bold text-ink">
+    Súper <span class="text-blue">Services</span> LLC
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul id="navMenu" class="list-none hidden md:flex items-center gap-7">
+    <li>
+      <a
+        href="#services"
+        data-i18n="nav.services"
+        class="text-[0.88rem] font-medium text-muted no-underline hover:text-ink transition-colors duration-200"
+      >
+        Services
+      </a>
+    </li>
+    <li>
+      <a
+        href="#why"
+        data-i18n="nav.about"
+        class="text-[0.88rem] font-medium text-muted no-underline hover:text-ink transition-colors duration-200"
+      >
+        About
+      </a>
+    </li>
+    <li>
+      <a
+        href="#contact"
+        data-i18n="nav.contact"
+        class="nav-cta bg-ink text-surface px-[22px] py-[10px] rounded-lg text-[0.85rem] font-semibold no-underline hover:bg-ink2 hover:-translate-y-0.5 transition-all"
+      >
+        Contact Us
+      </a>
+    </li>
+    <li class="nav-utils flex items-center gap-3">
+      <button
+        id="langBtn"
+        aria-label="Toggle language"
+        title="Toggle language"
+        class="icon-btn border border-line rounded-lg w-[38px] h-[38px] inline-flex items-center justify-center font-body font-semibold text-[0.78rem] text-ink bg-transparent cursor-pointer hover:border-blue hover:text-blue transition-colors duration-200"
+      >
+        EN
+      </button>
+      <button
+        id="themeBtn"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+        class="icon-btn border border-line rounded-lg w-[38px] h-[38px] inline-flex items-center justify-center bg-transparent cursor-pointer hover:border-blue hover:text-blue transition-colors duration-200"
+      >
+        <span class="w-3.5 h-3.5 flex items-center justify-center">
+          <Fragment set:html={moonIcon} />
+        </span>
+      </button>
+    </li>
+  </ul>
+</nav>

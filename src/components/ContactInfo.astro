@@ -1,0 +1,44 @@
+---
+import { mapPinIcon, phoneIcon, computerIcon } from './icons/icons';
+---
+
+<div>
+  <h2 class="font-display text-[1.5rem] font-bold text-ink mb-3" data-i18n="contact.findus">Find Us</h2>
+  <p class="text-muted text-[0.93rem] leading-[1.7] mb-8" data-i18n="contact.findus.d">
+    We'd love to hear from you. Stop by or give us a call — our team is ready to assist.
+  </p>
+
+  <div class="flex items-start gap-3 mb-5">
+    <div class="w-10 h-10 rounded-lg bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <Fragment set:html={mapPinIcon} />
+    </div>
+    <div>
+      <div class="text-[0.72rem] text-muted font-semibold tracking-[0.5px] uppercase" data-i18n="contact.addr">Address</div>
+      <div class="text-[0.9rem] text-ink font-medium mt-0.5 leading-[1.4]">
+        50 S Pickett St, Suite 106<br />Alexandria, VA 22304
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-start gap-3 mb-5">
+    <div class="w-10 h-10 rounded-lg bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <Fragment set:html={phoneIcon} />
+    </div>
+    <div>
+      <div class="text-[0.72rem] text-muted font-semibold tracking-[0.5px] uppercase" data-i18n="contact.phone">Phone</div>
+      <div class="text-[0.9rem] text-ink font-medium mt-0.5 leading-[1.4]">
+        <a href="tel:7039735065" class="text-ink no-underline hover:text-blue transition-colors">(703) 973-5065</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-start gap-3 mb-5">
+    <div class="w-10 h-10 rounded-lg bg-blue-light text-blue flex-shrink-0 flex items-center justify-center">
+      <Fragment set:html={computerIcon} />
+    </div>
+    <div>
+      <div class="text-[0.72rem] text-muted font-semibold tracking-[0.5px] uppercase" data-i18n="contact.company">Company</div>
+      <div class="text-[0.9rem] text-ink font-medium mt-0.5 leading-[1.4]">Súper Services LLC</div>
+    </div>
+  </div>
+</div>

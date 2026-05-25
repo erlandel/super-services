@@ -1,0 +1,31 @@
+---
+export interface Props {
+  num: string;
+  title: string;
+  desc: string;
+  i18nTitle: string;
+  i18nDesc: string;
+}
+
+const { num, title, desc, i18nTitle, i18nDesc } = Astro.props;
+---
+
+<div class="h-full flex flex-col bg-surface border border-line rounded-2xl p-9 transition-all duration-250 hover:border-blue hover:shadow-card hover:-translate-y-1">
+  <div
+    class="font-display text-[2.5rem] font-extrabold text-ink/45 dark:text-blue-mid dark:opacity-65 leading-none mb-5"
+  >
+    {num}
+  </div>
+  <h3
+    class="font-display text-[1.15rem] font-bold text-ink mb-2.5"
+    data-i18n={i18nTitle}
+  >
+    {title}
+  </h3>
+  <p
+    class="text-[0.88rem] leading-[1.65] text-muted"
+    data-i18n={i18nDesc}
+  >
+    {desc}
+  </p>
+</div>

@@ -1,0 +1,22 @@
+---
+import { checkIcon } from './icons/icons';
+
+export interface Props {
+  title: string;
+  desc: string;
+  i18nTitle: string;
+  i18nDesc: string;
+}
+
+const { title, desc, i18nTitle, i18nDesc } = Astro.props;
+---
+
+<li class="flex items-start gap-3.5 py-[18px] border-b border-line dark:border-white/15 last:border-b-0 last:pb-0">
+  <div class="w-7 h-7 rounded-lg bg-blue flex-shrink-0 flex items-center justify-center text-white mt-0.5">
+    <Fragment set:html={checkIcon} />
+  </div>
+  <div>
+    <strong class="block mb-0.5 text-ink dark:text-white" data-i18n={i18nTitle}>{title}</strong>
+    <span class="text-[0.9rem] leading-[1.6] text-ink2 dark:text-white/80" data-i18n={i18nDesc}>{desc}</span>
+  </div>
+</li>

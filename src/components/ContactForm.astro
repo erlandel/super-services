@@ -1,0 +1,49 @@
+<form id="contactForm" novalidate>
+  <div class="grid grid-cols-2 gap-3.5 max-sm:grid-cols-1">
+    <div class="fg" id="fgFirst">
+      <label data-i18n="form.first">First Name</label>
+      <input type="text" name="first" id="inpFirst" placeholder="John" required data-i18n-ph="form.first.ph" />
+      <div class="err-msg" data-i18n="form.req">This field is required</div>
+    </div>
+    <div class="fg" id="fgLast">
+      <label data-i18n="form.last">Last Name</label>
+      <input type="text" name="last" id="inpLast" placeholder="Doe" required data-i18n-ph="form.last.ph" />
+      <div class="err-msg" data-i18n="form.req">This field is required</div>
+    </div>
+  </div>
+
+  <div class="fg" id="fgEmail">
+    <label data-i18n="form.email">Email</label>
+    <input type="email" name="email" id="inpEmail" placeholder="you@email.com" required />
+    <div class="err-msg" data-i18n="form.emailReq">Valid email required</div>
+  </div>
+
+  <div class="fg" id="fgPhone">
+    <label data-i18n="form.phone">Phone</label>
+    <input type="tel" name="phone" id="inpPhone" placeholder="(703) 973-5065" required data-i18n-ph="form.phone.ph" />
+    <div class="err-msg" data-i18n="form.phoneReq">Valid phone required</div>
+  </div>
+
+  <div class="fg" id="fgService">
+    <label data-i18n="form.service">Service Needed</label>
+    <select name="service" id="svcSel" required>
+      <option value="" data-i18n="form.select">Select a service…</option>
+      <option data-i18n="svc.1.t">Logistics / Parcel Handling</option>
+      <option data-i18n="svc.2.t">Digital Services</option>
+      <option data-i18n="svc.3.t">Mobile Top-Up</option>
+      <option data-i18n="svc.4.t">Customer Support / Processing</option>
+      <option data-i18n="form.other">Other</option>
+    </select>
+    <div class="err-msg" data-i18n="form.req">This field is required</div>
+  </div>
+
+  <div class="fg" id="fgMsg">
+    <label data-i18n="form.msg">Message</label>
+    <textarea name="message" id="inpMsg" placeholder="How can we help you?" required data-i18n-ph="form.msg.ph"></textarea>
+    <div class="err-msg" data-i18n="form.req">This field is required</div>
+  </div>
+
+  <button type="submit" class="w-full py-3.5 mt-1.5 bg-ink border-none rounded-xl text-surface font-body font-semibold text-[0.95rem] cursor-pointer hover:bg-ink2 hover:-translate-y-0.5 transition-all" id="sb" data-i18n="form.send">
+    Send Message →
+  </button>
+</form>

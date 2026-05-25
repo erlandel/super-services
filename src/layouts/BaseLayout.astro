@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+
+const title = 'Súper Services LLC';
+const desc = 'Logistics, digital services, mobile top-ups, and customer support — everything you need in Northern Virginia.';
+---
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={desc} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <script>
+      import '../scripts/theme.ts';
+      import '../scripts/i18n.ts';
+      import '../scripts/hamburger.ts';
+      import '../scripts/reveal.ts';
+      import '../scripts/form.ts';
+    </script>
+  </body>
+</html>

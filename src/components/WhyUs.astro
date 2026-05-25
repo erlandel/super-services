@@ -1,0 +1,61 @@
+---
+import WhyListItem from './WhyListItem.astro';
+import StatsCards from './StatsCards.astro';
+---
+
+<section id="why" class="px-[6%] py-[100px] bg-surface transition-[background] duration-350">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-[70px] items-center">
+    <div class="bg-surface border border-line rounded-2xl px-11 py-12 shadow-soft dark:bg-[linear-gradient(140deg,#0a1220,#152238)] dark:border-line rv">
+      <div class="text-[0.75rem] font-semibold tracking-[2.5px] uppercase text-blue mb-3" data-i18n="why.label">
+        Why Us
+      </div>
+      <h2 class="font-display text-[clamp(1.9rem,3.5vw,2.8rem)] font-bold text-ink dark:text-white tracking-[-0.5px]" data-i18n="why.title">
+        What Sets Us Apart
+      </h2>
+      <ul class="list-none mt-9 flex flex-col gap-0">
+        <WhyListItem
+          title="Conveniently Located"
+          desc="Based in the US, we serve clients across the entire country."
+          i18nTitle="why.1.t"
+          i18nDesc="why.1.d"
+        />
+        <WhyListItem
+          title="Multiple Services, One Place"
+          desc="No more running around. Everything you need is here."
+          i18nTitle="why.2.t"
+          i18nDesc="why.2.d"
+        />
+        <WhyListItem
+          title="Real People, Real Help"
+          desc="Personalized attention — no automated runarounds, just genuine support."
+          i18nTitle="why.3.t"
+          i18nDesc="why.3.d"
+        />
+        <WhyListItem
+          title="Fast & Reliable"
+          desc="Streamlined processes so you get results quickly and accurately."
+          i18nTitle="why.4.t"
+          i18nDesc="why.4.d"
+        />
+      </ul>
+    </div>
+
+    <div class="rv">
+      <h3 class="font-display text-[1.7rem] font-bold text-ink mb-2.5" data-i18n-html="why.right.t">
+        Serving the<br />United States
+      </h3>
+      <p class="text-muted leading-[1.75] text-[0.95rem] mb-6" data-i18n="why.right.d">
+        Súper Services LLC was founded with a simple mission: bring professional, multi-service convenience to
+        customers across the United States. Whether you're a busy family or a growing business, we're here to help.
+      </p>
+      <a
+        href="#contact"
+        class="bg-ink text-surface px-8 py-[15px] rounded-xl font-body font-semibold text-[0.95rem] no-underline shadow-soft hover:bg-ink2 hover:-translate-y-0.5 hover:shadow-card transition-all inline-block"
+        data-i18n="why.right.cta"
+      >
+        Get in Touch
+      </a>
+      <StatsCards />
+    </div>
+  </div>
+</section>
