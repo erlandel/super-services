@@ -1,6 +1,6 @@
-const EMAILJS_PUBLIC_KEY = 'ZlIQISnC-Ydulg61b';
-const EMAILJS_SERVICE_ID = 'service_85wytkb';
-const EMAILJS_TEMPLATE_ID = 'template_vuxvtum';
+const EMAILJS_PUBLIC_KEY = 'SJdw9XLboQccj1Dwl';
+const EMAILJS_SERVICE_ID = 'service_yimk7fq';
+const EMAILJS_TEMPLATE_ID = 'template_3yjdxl7';
 
 import emailjs from '@emailjs/browser';
 
@@ -78,7 +78,7 @@ contactForm.addEventListener('submit', function (e) {
       phone,
       service: svc,
       message: msg,
-      to_email: 'aldairguerracedeno@gmail.com',
+      to_email: 'delfinoerlan@gmail.com',
     })
     .then(() => {
       sbBtn.innerHTML = 'Message Sent ✓';
@@ -90,7 +90,8 @@ contactForm.addEventListener('submit', function (e) {
       }, 5000);
       contactForm.reset();
     })
-    .catch(() => {
+    .catch((err) => {
+      console.error('EmailJS error:', err?.status, err?.text ?? err);
       sbBtn.innerHTML = 'Error — try again';
       sbBtn.style.background = '#dc3545';
       setTimeout(() => {
