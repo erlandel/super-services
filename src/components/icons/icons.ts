@@ -18,4 +18,6 @@ export const phoneIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentCo
 
 export const computerIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></svg>`;
 
+export const solarPanelIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m16.24 5.76-2.83 2.83"/><path d="M4.93 7.93 7.76 10.76"/><path d="M2 14h4"/><path d="M18 14h4"/><path d="m7.07 18.07 2.83-2.83"/><path d="m14.1 15.24 2.83 2.83"/><circle cx="12" cy="12" r="3.5"/></svg>`;
+
 export const arrowRightIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`;

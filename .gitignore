@@ -4,8 +4,11 @@ dist/
 # generated types
 .astro/
 
+
 # dependencies
 node_modules/
+openspec
+.opencode
 
 # logs
 npm-debug.log*
